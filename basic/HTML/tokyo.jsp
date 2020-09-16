@@ -28,6 +28,12 @@
     String num2 = request.getParameter("NUM2");
     String job = request.getParameter("JOB");
     String[] subject = request.getParameterValues("SUBJECT");
+    String h1 =null;
+    String h2 =null;
+    String h3 =null;
+    String h4 =null;
+    String h5 =null;
+    if()
   
     String itrd = request.getParameter("ITRD");
   
@@ -40,11 +46,9 @@
             <input type="radio" name="sex" value="female" <%=s2%>>여자</label><br>
         <label>E-mail <input type="text" value=<%=email%>></label><br>
         <label>핸드폰<select>
-            <option value=<%=num%>><%=num%></option>
+                <option value=<%=num%>><%=num%></option>
             </select> - <input type="text" value=<%=num1%>> - <input type="text" value=<%=num2%>></label><br>
-        <% for(String hob : subject) { %>
-        <input type="checkbox" name="SUBJECT" checked> 
-        <% =hob %></label> <% } %><br>
+      
     <label>직업<select>
             <option value=<%=job%>><%=job%>
         </select><br>
@@ -58,15 +62,8 @@
         <h3>이메일: <%=email%></h3>
         <h3>수신여부: <%=mail%></h3>
         <h3>전화번호: <%=num%>-<%=num1%>-<%=num2%></h3>
-        <%
-            for(String hob : subject) {
-                %>
-        <input type="checkbox" name="SUBJECT" checked> <%=hob%>
-    </label><br>
-    <h3>취미: <%=hob%></h3>
-    <% } %>
-    <h3>직업: <%=job%></h3>
-    <h3>자기소개: <%=itrd%></h3>
+        <h3>직업: <%=job%></h3>
+        <h3>자기소개: <%=itrd%></h3>
 
 
 </body>
