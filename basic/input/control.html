@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>회원인증 입력양식</legend>
+            <p>ID : <input type="text" name="ID" size="15" required></p>
+            <p>PW : <input type="password" name="PSW" size="15" placeholder="비밀번호" required></p>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend> 텍스트 공간 입력 양식 만들기</legend>
+        <h2>텍스트 공간 입력 양식</h2>
+        <form>
+            <textarea rows="5" cols="50">텍스트를 작성하는 공간입니다</textarea>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+            <p></p>
+    </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <p>이름: <input type="text" name="name"></p>
+            <p>학교: <input type="text" name="school"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>라디오 양식 만들기</legend>
+            <h3>당신의 성별은 무엇입니까?</h3>
+            <input type="radio" name="sex" value="male" checked>남자
+            <input type="radio" name="sex" value="female" checked>여자
+            <p></p>
+            <h3>당신은 몇 학년입니까?</h3>
+            <input type="radio" name="year" value="1" checked>1학년
+            <input type="radio" name="year" value="2">2학년
+            <input type="radio" name="year" value="3">3학년
+            <input type="radio" name="year" value="4">4학년
+
+            <p></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>체크박스 양식만들기</legend>
+            <h3>현재 관심을 가지고 있는 학습주제는 무엇인가요></h3>
+            <input type="checkbox" name="subject" value="HTML5" checked>HTML5<br>
+            <input type="checkbox" name="subject" value="CSS3">CSS3 <br>
+            <input type="checkbox" name="subject" value="Javascript">Javascript<br>
+            <input type="checkbox" name="subject" value="Jquery">Jquery<br>
+            <p></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+
+        </fieldset>
+
+    </form>
+    <form>
+        <fieldset>
+            <legend>버튼 양식 만들기</legend>
+            <h3>Button 태그 사용</h3>
+            <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
