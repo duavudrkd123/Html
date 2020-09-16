@@ -50,8 +50,10 @@
   
     %>
     <h2>CSS Layout Float</h2>
-    <p />
-    <p />
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+        stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)</p>
     <header>
         <h2>Cities</h2>
     </header>
@@ -72,7 +74,7 @@
                 <label>성별
                     <input type="radio" name="sex" value="male" <%=s1%>>남자
                     <input type="radio" name="sex" value="female" <%=s2%>>여자</label><br>
-                <label>E-mail <input type="text" value=<%=email%>></label><br>
+                <label>E-mail: <input type="text" value=<%=email%>></label><br>
                 <label style="font-size: 20px;">메일 수신<input style="font-size: 10px;" type="radio" name="MAIL" value="Y"
                         checked>수신동의<input type="radio" name="MAIL" value="N">수신거부</label><br>
                 <label>핸드폰<select>
@@ -87,6 +89,13 @@
                         <input type="checkbox" <%=h3%>>공부
                         <input type="checkbox" <%=h4%>>먹기</label><br>
                     <label>자기소개<textarea rows="5" cols="50"><%=itrd%></textarea></label>
-</body>
-
-</html>
+            </article>
+        </section>
+    
+        <footer>
+            <p>Footer</p>
+        </footer>
+    
+    </body>
+    
+    </html>
