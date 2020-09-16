@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+    <h2>CSS Layout Float</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+        stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)</p>
+
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="layout.html">London</a></li>
+                <li><a href="paris.html">Paris</a></li>
+                <li><a href="tokyo.html">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Tokyo</h1>
+            <form action="tokyo.jsp" method="POST">
+                <label style="font-size: 20px;">아이디<input type="text" name="ID"><input type="submit"
+                        value="ID중복검사"></label><br>
+                <label>생년월일<input type="date" name="DATE"></label><br>
+
+                <label>성별<input type="radio" name="sex" value="male" checked>남자<input type="radio" name="sex"
+                        value="female" checked>여자</label><br>
+
+                <label>E-mail: <input type="text" name="EMAIL"></label><br>
+                <label style="font-size: 20px;">메일 수신<input style="font-size: 10px;" type="radio" name="MAIL"
+                    value="Y" checked>수신동의<input type="radio" name="MAIL" value="N" checked>수신거부</label><br>
+
+                <label>핸드폰<select name="NUM">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="019">019</option>
+                    </select> - <input type="text" name="NUM1"> - <input type="text" name="NUM2"></label><br>
+
+                <label>직업<select name="JOB">
+                        <option value="학생">학생</option>
+                        <option value="백수">백수</option>
+                        <option value="수박">수박</option>
+                        <option value="편의점">편의점</option>
+                        <option value="선생님">선생님</option>
+                </label><br>
+                
+                <label>취미 
+                <input type="checkbox" name="SUBJECT" value="listening" checked>음악 듣기
+                <input type="checkbox" name="SUBJECT" value="Reading">책읽기
+                <input type="checkbox" name="SUBJECT" value="Study">공부
+                <input type="checkbox" name="SUBJECT" value="eating">멱기</label><br>
+
+
+                <label>자기소개<textarea rows="5" cols="50" name="ITRD"></textarea></label>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
