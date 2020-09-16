@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
     <title>Document</title>
+    <label style="font-size: 20px;" />
 </head>
 
 <body>
@@ -32,40 +34,59 @@
     String h2 =null;
     String h3 =null;
     String h4 =null;
-    String h5 =null;
-    if()
+    for(String hob : subject) {
+            if(hob.equals("listening")){
+            h1 = "checked";
+            }if(hob.equals("Reading")){
+            h2 = "checked";}
+           if(hob.equals("Study")){
+            h3 = "checked";}
+           if(hob.equals("eating")){
+            h4 = "checked";}
+           
+        }
   
     String itrd = request.getParameter("ITRD");
   
     %>
-    <label style="font-size: 20px;">
-        아이디<input type="text" value=<%=id%>><br>
-        <label>생년월일<input type="date" value=<%=date%>></label><br>
-        <label>성별
-            <input type="radio" name="sex" value="male" <%=s1%>>남자
-            <input type="radio" name="sex" value="female" <%=s2%>>여자</label><br>
-        <label>E-mail <input type="text" value=<%=email%>></label><br>
-        <label>핸드폰<select>
-                <option value=<%=num%>><%=num%></option>
-            </select> - <input type="text" value=<%=num1%>> - <input type="text" value=<%=num2%>></label><br>
-      
-    <label>직업<select>
-            <option value=<%=job%>><%=job%>
-        </select><br>
+    <h2>CSS Layout Float</h2>
+    <p />
+    <p />
+    <header>
+        <h2>Cities</h2>
+    </header>
 
-
-        <label>자기소개<textarea rows="5" cols="50"><%=itrd%></textarea></label>
-
-        <h3>아이디: <%=id%></h3>
-        <h3>날짜: <%=date%></h3>
-        <h3>성별: <%=sex%></h3>
-        <h3>이메일: <%=email%></h3>
-        <h3>수신여부: <%=mail%></h3>
-        <h3>전화번호: <%=num%>-<%=num1%>-<%=num2%></h3>
-        <h3>직업: <%=job%></h3>
-        <h3>자기소개: <%=itrd%></h3>
-
-
+    <section>
+        <nav>
+            <ul>
+                <li><a href="layout.html">London</a></li>
+                <li><a href="paris.html">Paris</a></li>
+                <li><a href="tokyo.html">Tokyo</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Tokyo</h1>
+            <form action="tokyo.jsp" method="POST">
+                <label>아이디<input type="text" value=<%=id%>></label><br>
+                <label>생년월일<input type="date" value=<%=date%>></label><br>
+                <label>성별
+                    <input type="radio" name="sex" value="male" <%=s1%>>남자
+                    <input type="radio" name="sex" value="female" <%=s2%>>여자</label><br>
+                <label>E-mail <input type="text" value=<%=email%>></label><br>
+                <label style="font-size: 20px;">메일 수신<input style="font-size: 10px;" type="radio" name="MAIL" value="Y"
+                        checked>수신동의<input type="radio" name="MAIL" value="N">수신거부</label><br>
+                <label>핸드폰<select>
+                        <option value=<%=num%>><%=num%></option>
+                    </select> - <input type="text" value=<%=num1%>> - <input type="text" value=<%=num2%>></label><br>
+                <label>직업<select>
+                        <option value=<%=job%>><%=job%>
+                    </select><br>
+                    <label>취미
+                        <input type="checkbox" <%=h1%>>음악 듣기
+                        <input type="checkbox" <%=h2%>>책읽기
+                        <input type="checkbox" <%=h3%>>공부
+                        <input type="checkbox" <%=h4%>>먹기</label><br>
+                    <label>자기소개<textarea rows="5" cols="50"><%=itrd%></textarea></label>
 </body>
 
 </html>
