@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            color: blue;
+            background: green;
+            opacity: 0.9;
+        }
+
+        div:hover {
+            width: 400px;
+            height: 50px;
+            color: red;
+            background: yellow;
+            opacity: 0.5;
+            transition: all 1.5s linear 0.5;
+
+        }
+
+        /* 첫번째 태그의 텍스트 색상*/
+        h4:first-child {
+            color: blue;
+            font-size: 20px;
+
+        }
+
+        /*마지막 태그의 텍스트 색상*/
+        h4:last-child {
+            color: red;
+            font-size: 20px;
+
+        }
+
+        /*홀수 태그*/
+        h4:nth-child(2n+1) {
+            background-color: green;
+        }
+
+        /*짝수 태그*/
+        h4:nth-last-child(2n) {
+            background-color: yellow;
+
+        }
+
+        h4:hover {
+            background-color: slateblue;
+        }
+
+        div>h4 {
+            color: red;
+        }
+
+        div {
+            color: white;
+        }
+
+        h2:first-letter {
+            font-size: 30px;
+            color: red;
+            text-transform: uppercase;
+        }
+
+        h3:first-line {
+            color: blue;
+        }
+
+        input:focus {
+            background-color: red;
+        }
+
+        input:checked+div.d1 {
+            background-color: gray;
+        }
+
+        input:checked+div.d2 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2>가상 선택자</h2>
+    <div class >
+        가상 클래스를 이용한 애니메이션 효과<br>
+        마우스가 위에 있으면 박스가 늘어나요.
+    </div> 
+    <h2>구조적 가상 클래스 선택자</h2>
+
+    <h4>웹 프로그래밍 시작</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍 마지막</h4>
+
+
+    <h2> UI 요소 상태 가상 클래스 선택자</h2>
+    <h2>states pseudo-classes</h2>
+    <h3>문제) 대한민국 수도는?</h3>
+    <p>정답 작성 : <input type="text"></p>
+    <h2>answer</h2>
+    힌트 보기 : <input type="checkbox">
+    <div class="d1">
+        남대문이 있는 곳이죠.
+    </div>
+    정답 보기 : <input type="checkbox">
+    <div class="d1">
+        서울
+    </div>
+</body>
+
+</html>
