@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            z-index: 6;
+            border-style: solid;
+            border-radius: 3cm;
+            border-color:rgba(124, 247, 94, 0.844);
+            position: sticky;
+            top: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 581px;
+            background-color: rgba(164, 255, 202, 0.535);
+        }
+
+        li {
+            display: inline;
+        }
+
+        .dropbtn {
+            border-radius: 3cm;
+            background-color: lightblue;
+            color: black;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightgreen;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: mediumseagreen;
+        }
+
+        h2 {
+
+            font-size: 2cm;
+            background-image: url(title.jpg);
+            background-size: auto;
+            height: 5cm;
+            background-position: right;
+            background-repeat: repeat;
+        }
+
+
+
+        iframe {
+            z-index: 5;
+            position: -webkit-fixed;
+            position: fixed;
+            align-items: left;
+            width: 10cm;
+            height: 5.63cm;
+            bottom: 0;
+            right: 0;
+        }
+
+        .IF {
+            z-index: 1;
+            position: relative;
+
+           
+            right: 0;
+            width: 8cm;
+            border: 3px solid #73AD21;
+
+        }
+
+        a {
+            float: left;
+
+            background-color: #cae8ca;
+            border: 1px solid #4CAF50;
+            padding: 0px 5px;
+        }
+
+        .btn-group .button {
+            z-index: 6;
+            background-color: #4CAF50;
+            border: 1px solid green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .btn-group .button:not(:last-child) {
+            border-right: none;
+          
+        }
+
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>평강의 Shopping PlayList</h2>
+    <ul>
+        <li>
+            <div class="dropdown"><button class="dropbtn">잔잔한 노래</button>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/embed/VQ03WpqlpCI?amp;autoplay=1" target="IFs">종이비행기 - 윤하</a>
+                    <a href="https://www.youtube.com/embed/vZofi2hgiAE?amp;autoplay=1" target="IFs">2002 - Anne
+                        Marie</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="dropdown"><button class="dropbtn">신나는 노래</button>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/embed/F-Y86dlubEk?amp;autoplay=1" target="IFs">All Falls Down -
+                        AL</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="dropdown"><button class="dropbtn">우울한 노래</button>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/embed/bbtwrMDItro?amp;autoplay=1" target="IFs">F**king Perfect -                        P!nk</a>
+                    <a href="https://www.youtube.com/embed/EQzqq0LNlto?amp;autoplay=1" target="IFs">Rain Drop - IU</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown"><button class="dropbtn">가사가 없는 노래</button>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/embed/J1-Bd8Vfm54?amp;autoplay=1"
+                        target="IFs">Shape of you(가야금 커버)</a>
+                    <a href="https://www.youtube.com/embed/zOUlPrCRlVM?list=PL8Q7ls6GS3n-fou-_A8Hhl3pELIySPv0h?amp;autoplay=1"
+                        target="IFs">Merry Christmas Mr. Lawrence - Sakamoto</a>
+                    <a href="https://www.youtube.com/embed/X7Ddg27BZi4?list=PL8Q7ls6GS3n-fou-_A8Hhl3pELIySPv0h?amp;autoplay=1"
+                        target="IFs">소나기(피아노 커버)</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <iframe name="IFs" src="https://www.youtube.com/embed/7bPffIZot10?amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay;
+     clipboard-write; encrypted-media; gyroscope; 
+     picture-in-picture" allowfullscreen></iframe>
+     <iframe name="web" class="IF" src="https://www.tmon.co.kr/" style="height:30cm; width:50cm;" 
+     title="Iframe Example"></iframe>
+     
+     <div class="btn-group">
+        <a href="https://www.tmon.co.kr/" target="web">티몬</a>
+        <a href="https://front.wemakeprice.com/main/" target="web">위메프</a>
+        <a href="https://www.coupang.com/" target="web">쿠팡</a>
+         <a href="http://www.auction.co.kr/" target="web">옥션</a>
+        </div>
+        
+
+
+
+</body>
+
+</html>
