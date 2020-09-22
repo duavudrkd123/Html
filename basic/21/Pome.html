@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        .title {
+        font-size: 55px;
+        white-space : nowrap;
+        margin: 0cm;
+        background-image: url("back.png");
+        background-repeat: unset;
+        height: 420px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p class ="title" style= "padding-top: 3cm; color: rgb(255, 227, 135);">Welcome To<br> Pyeonggang's <br>Home</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img src="you.png" style= "height: 30px; " ><br>
+      <iframe name="IFs" src="https://www.youtube.com/embed/7bPffIZot10?amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay;
+     clipboard-write; encrypted-media; gyroscope; 
+     picture-in-picture" allowfullscreen></iframe>
+      <p>5년 5개월만에 돌아온 윤하의 다섯 번째 정규앨범 [RescuE]는 실체의 시작을 알리는 신호의 뜻을 가지고 있다.<br>
+        이번 앨범은 기존의 윤하의 음악적 색깔은 물론, 총괄 프로듀싱을 맡은 그루비룸(GroovyRoom)의 트렌디함을 더한 음악까지 한 번에 만나볼 수 있는 앨범으로<br> 
+        서른 살이 된 윤하의 새로운 시작을 의미함과 동시에 리스너들에게 새로운 빛을 준다는 의미 또한 담고 있다.</p>
+    </div>
+   
+   
+   
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="Me!.jpg" style="height:200px;"></img>
+      <p>Hello this is Pyeonggang. I hope you enjoy this website. It's a test page, but I'll do my best.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Notyet</p></div>
+      <div class="fakeimg"><p>ill do </p></div>
+      <div class="fakeimg"><p>aft java</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+       <a  href="https://www.instagram.com/y___p_g/?hl=ko"><img style="height: 30px;" src="Insta.png"></a>
+       <a  href="https://ko-kr.facebook.com/pyeom"><img style="height: 30px;" src="face.png"></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
